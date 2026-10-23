@@ -1,0 +1,126 @@
+
+/* General page styling */
+body {
+    background-color: #f4f6f9;
+    color: #222;
+    font-family: Arial, sans-serif;
+}
+
+/* Quiz card */
+.quiz-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Question heading */
+#questionText {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+/* Answer buttons */
+.answer-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+    text-align: left;
+    cursor: pointer;
+}
+
+/* Answer hover */
+.answer-btn:hover {
+    background-color: #e2e6ea;
+}
+
+/* Correct answer */
+.answer-btn.correct {
+    background-color: #198754;
+    color: white;
+}
+
+/* Incorrect answer */
+.answer-btn.incorrect {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Segmented progress bar */
+.progress-box {
+    display: flex;
+    gap: 4px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.progress-segment {
+    height: 15px;
+    flex: 1;
+    background-color: #ddd;
+    border-radius: 4px;
+}
+
+/* Different segment colors */
+.segment-0 { background-color: #0d6efd; }
+.segment-1 { background-color: #198754; }
+.segment-2 { background-color: #ffc107; }
+.segment-3 { background-color: #dc3545; }
+.segment-4 { background-color: #6f42c1; }
+
+/* Uncompleted segments */
+.progress-segment.pending {
+    background-color: #ddd;
+}
+
+/* Timer */
+#timer {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .quiz-card {
+    background-color: #222;
+}
+
+.dark-mode .answer-btn {
+    background-color: #333;
+    color: white;
+    border-color: #555;
+}
+
+.dark-mode .answer-btn.correct {
+    background-color: #198754;
+}
+
+.dark-mode .answer-btn.incorrect {
+    background-color: #dc3545;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+
+    .quiz-card {
+        padding: 15px;
+    }
+
+    #questionText {
+        font-size: 18px;
+    }
+
+    .answer-btn {
+        padding: 12px;
+    }
+}
